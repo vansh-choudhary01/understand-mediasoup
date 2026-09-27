@@ -170,7 +170,7 @@ const wss = new WebSocketServer({
                         },
 
                     }));
-                    
+
                 }
 
                 if (data.type === "device-loaded") {
@@ -187,6 +187,7 @@ const wss = new WebSocketServer({
                                 {
                                     protocol: "udp",
                                     ip: "0.0.0.0",
+                                    announcedAddress: "192.168.0.244",
                                 },
                             ],
                         });
@@ -205,9 +206,10 @@ const wss = new WebSocketServer({
                                 {
                                     protocol: "udp",
                                     ip: "0.0.0.0",
+                                    announcedAddress: "192.168.0.244",
                                 },
                             ],
-                        });
+                    });
 
 
                     // ------------------------------------------------
