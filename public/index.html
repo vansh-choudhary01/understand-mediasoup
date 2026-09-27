@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        Mediasoup Group Call
+    </title>
+
+</head>
+
+
+<body>
+
+    <h1>
+        Mediasoup Group Call
+    </h1>
+
+
+    <!-- =====================================================
+         STEP 1 — OUR LOCAL VIDEO
+         ===================================================== -->
+
+    <h2>
+        Me
+    </h2>
+
+    <video
+        id="localVideo"
+        autoplay
+        muted
+        playsinline
+    ></video>
+
+
+    <!-- =====================================================
+         STEP 2 — REMOTE USERS
+         ===================================================== -->
+
+    <h2>
+        Others
+    </h2>
+
+    <div id="remoteVideos"></div>
+
+
+    <!-- =====================================================
+         STEP 3 — CLIENT APPLICATION
+         ===================================================== -->
+
+    <script
+        type="module"
+        src="/client.js"
+    ></script>
+
+</body>
+
+</html>
